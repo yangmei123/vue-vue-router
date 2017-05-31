@@ -1,0 +1,443 @@
+@charset "UTF-8";
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    position: relative;
+}
+
+.disNone {
+    display: none;
+}
+
+.bgWrap {
+    background: url(../images/bg.jpg) left top no-repeat #ffabc9;
+    background-size: 100% auto;
+}
+
+img {
+    width: 100%;
+}
+
+.bgWrap {
+    height: 100%;
+    padding: 0 14.0625% 0;
+}
+
+.bgWrap .title {
+    margin-top: 5px;
+}
+
+.indexMain {
+    margin-bottom: 21%;
+    padding: 116% 0 0;
+    text-align: center;
+    background: url(../images/girl.png) left 43% no-repeat;
+    background-size: 100% auto;
+}
+
+.boxWrap {
+    position: relative;
+    background: url(../images/box_body.png) left top repeat-y;
+    background-size: 100% auto;
+}
+
+.boxWrap span.huiZ {
+    position: absolute;
+    left: 50%;
+    top: -50%;
+    display: inline-block;
+    width: 39.5652%;
+    margin-left: -19%;
+    margin-top: 3%;
+    z-index: 100;
+}
+
+.boxBody {
+    position: relative;
+    left: 0;
+    top: -17px;
+    background: url(../images/box_header.png) left top no-repeat;
+    background-size: 100% auto;
+}
+
+.boxCon {
+    padding: 2% 8.6956% 12.3913%;
+    position: relative;
+    left: 0;
+    bottom: -41px;
+    background: url(../images/box_footer.png) left bottom no-repeat;
+    background-size: 100% auto;
+}
+
+.boxCon p {
+    color: #58d3cf;
+    font-size: 14px;
+}
+
+.btnArea {
+    text-align: center;
+    padding-bottom: 5.5%;
+}
+
+.btnArea .btn {
+    display: inline-block;
+    width: 88%;
+    padding: 10px 0;
+    background-color: #ff4986;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 25px;
+    text-align: center;
+}
+
+
+/* -----
+beauty美妆测试页面
+ */
+
+.navWrap {
+    padding: 15px 1.5625% 30px;
+}
+
+.navBox {
+    position: relative;
+    width: 100%;
+    height: 20px;
+    border-radius: 15px;
+    background-color: #ffedf4;
+}
+
+.navBox .cover,
+.navBox .step,
+.navBox .stepOn {
+    position: absolute;
+    top: 0;
+}
+
+.navBox .cover {
+    width: 20%;
+    height: 20px;
+    left: 0;
+    border-radius: 15px;
+    background-color: #ff9cbd;
+}
+
+.navBox .step {
+    left: 20%;
+    height: 20px;
+    width: 20px;
+    border-radius: 15px;
+    background-color: #ff4986;
+    color: #fff;
+    text-align: center;
+}
+
+.navBox .stepOn {
+    right: 10px;
+    color: #ff4986;
+}
+
+.opt {
+    position: absolute;
+    display: inline-block;
+    top: 30px;
+    left: 20%;
+    height: 16px;
+    padding: 5px 7px;
+    border-radius: 15px;
+    background-color: #ffc8da;
+    color: #ff4986;
+    text-align: center;
+    line-height: 1.2;
+    font-size: 12px;
+    margin: 0 0 0 -10px;
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    transform: translate(-50%);
+}
+
+.opt:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    margin-left: -4px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 8px solid #ffc8da;
+}
+
+.opt.on:before {
+    left: 83%;
+}
+
+.selectWrap {
+    padding: 0 7.8125%;
+}
+
+.selectWrap .btnArea {
+    position: relative;
+}
+
+.selectWrap .btn {
+    width: 44%;
+    padding: 5px 0;
+}
+
+.face {
+    float: left;
+    display: inline;
+    width: 46.2963%;
+    text-align: center;
+    margin-right: 7.4074%;
+    margin-bottom: 7%;
+}
+
+.face h3,
+.face h3 + p {
+    /*  padding-right: 14.4%; */
+}
+
+.face h3 {
+    color: #464646;
+    font-size: 16px;
+}
+
+.face h3 + p {
+    font-size: 12px;
+    color: #7f7f7f;
+}
+
+.pre,
+.personPre {
+    position: absolute;
+    color: #ff4986;
+    font-size: 16px;
+    top: 7px;
+    left: -10px;
+}
+
+#faceColor .face,
+#skin .face {
+    margin-bottom: 18.4%;
+}
+
+#style .perStyle {
+    float: left;
+    display: inline;
+    width: 45.3%;
+    text-align: center;
+    margin-bottom: 25.2%;
+    margin-right: 9.4%;
+}
+
+.face:nth-child(even),
+#style .perStyle:nth-child(even) {
+    margin-right: 0;
+}
+
+.face:nth-child(even) h3,
+.face:nth-child(even) h3 + p,
+#style .perStyle:nth-child(even) h3,
+#style .perStyle:nth-child(even) h3 + p {
+    padding-right: 0;
+}
+
+
+/* ---
+基本信息
+ ---*/
+
+#personMes {
+    padding: 3.5% 10px 0;
+}
+
+#personMes .selectBox {
+    padding: 0 20px;
+    background-color: #b7e5ff;
+    border-radius: 20px;
+    margin-bottom: 17.2%;
+}
+
+.personPre {
+    left: 10px;
+}
+
+#personMes .btn {
+    width: 39.22%;
+}
+
+.swiper-slide {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #b7e5ff;
+    font-size: 16px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    width: 0;
+    height: 0;
+    margin-top: -9px;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    background: none;
+}
+
+.swiper-button-prev {
+    border-right: 8px solid #fff;
+    left: 0;
+}
+
+.swiper-button-next {
+    border-left: 8px solid #fff;
+    right: 0;
+}
+
+.swiper-wrapper .swiper-slide-active {
+    background-color: #c9e9fc;
+    color: #000;
+}
+
+.mark {
+    position: relative;
+    height: 26px;
+    font-size: 18px;
+    color: #ff4986;
+}
+
+.mark span:first-child,
+.mark span:last-child {
+    position: absolute;
+    top: 0;
+}
+
+.mark span:first-child {
+    left: 25px;
+}
+
+.mark span:last-child {
+    right: 25px;
+}
+
+
+/* -----
+测试结果
+ */
+
+.result {
+    height: 100%;
+    background-color: #ffabc9;
+    padding: 0;
+}
+
+.result .bgWrap {
+    padding: 16% 8.5% 0.1px;
+    box-sizing: border-box;
+}
+
+.result .boxCon h1 {
+    font-size: 30px;
+    color: #ff7997;
+    text-align: center;
+    margin: 7px 0 0;
+}
+
+.result .boxCon p {
+    text-align: left;
+}
+
+.result .imgArea {
+    margin: 0 15%;
+    width: 64.565%;
+    border-radius: 50%;
+    border: 7px solid #fc5c80;
+    overflow: hidden;
+}
+
+.result .imgArea img {
+    border-radius: 50%;
+}
+
+.result .btnArea {
+    position: relative;
+    padding: 15% 0 5.5%;
+}
+
+.result .btnArea p:nth-child(2) {
+    margin-bottom: 5.5%;
+}
+
+.result .btnArea .refresh {
+    position: absolute;
+    bottom: 10%;
+    right: -4.5%;
+    font-size: 12px;
+    color: #fff;
+    line-height: 2;
+    padding: 8px;
+    border-radius: 50%;
+    background-color: #ff5d93;
+}
+
+.result .btn {
+    width: 70.5%;
+    padding: 5px 0;
+}
+
+.disBlock {
+    display: block;
+}
+
+.mask {
+    display: none;
+    width: 100%;
+    height: 100%;
+    opacity: 0.75;
+    filter: alpha(opacity=75);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    background-color: #000;
+}
+
+.shareArea {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: 0;
+    margin-top: 0;
+    z-index: 10;
+    width: 85.9375%;
+    margin-left: -50%;
+}
+
+.attBtn {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    padding: 10px 18px;
+    background-color: #ffc8da;
+    color: #ff4986;
+    font-size: 18px;
+    border-radius: 7px;
+    transform: translate(-50%, -50%);
+}
+
+.other .bgWrap {
+    padding-top: 24%;
+}
+
+.swiper-container,.bgWrap {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0)!important;
+    -webkit-focus-ring-color: rgba(0, 0, 0, 0)!important;
+    -webkit-tap-highlight-color: transparent;
+    outline: none!important;
+    -webkit-appearance: none;
+}
+
