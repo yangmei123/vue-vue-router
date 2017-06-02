@@ -2,12 +2,13 @@
 
 > vue-vue-router project
 > 使用vue-cli脚手架工具构建vue项目
-*vue.js (2.0)
-*vue-router
-*webpack
-*eslint
-*es6
-*babel
+
+* vue.js (2.0)
+* vue-router
+* webpack
+* eslint
+* es6
+* babel
 
 ## Build Setup
 
