@@ -1,6 +1,6 @@
-# vue-meiz
+# vue-vue-router
 
-> vue-meiz project
+> vue-vue-router project
 
 ## Build Setup
 
