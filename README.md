@@ -9,6 +9,7 @@
 * eslint
 * es6
 * babel
+* swiper
 
 ## Build Setup
 
