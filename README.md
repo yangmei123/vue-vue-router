@@ -1,8 +1,11 @@
 # vue-vue-router
 
 > vue-vue-router project
+
 > 使用vue-cli脚手架工具构建vue项目
+
 > 请求使用node server
+
 > 对应的node服务端地址 https://github.com/yangmei123/node-server-express/tree/master
 
 * vue.js (2.0)
