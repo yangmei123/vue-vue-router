@@ -9,8 +9,7 @@ import skin from '@/components/skin';
 import gstyle from '@/components/gstyle';
 import result from '@/components/result';
 
-Vue.use(Router)
-
+Vue.use(Router);
 export default new Router({
   routes: [{
     path: '/',

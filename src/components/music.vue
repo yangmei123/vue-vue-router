@@ -1,7 +1,7 @@
 <template>
     <div id="music" v-show="musicShow">
         <div class="music on play"></div>
-        <audio :src="url" loop="loop" autoplay="autoplay" id="bgmusic"></audio>
+       <!--  <audio :src="url" loop="loop" autoplay="autoplay" id="bgmusic"></audio> -->
     </div>
 </template>
 

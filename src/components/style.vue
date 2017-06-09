@@ -89,7 +89,8 @@ export default {
       heightOption: style.option('.swiper-height-prev', '.swiper-height-next', 6, this),
       weightOption: style.option('.swiper-weight-prev', '.swiper-weight-next', 6, this),
       postion: { width: '20%', index: '1', msg: '您的基础信息？' },
-      collectData: this.setData
+      collectData: this.setData,
+      nextData: {type: 'base', url: '/beauty/face', msg: '请选择年龄体重身高！'}
     }
   },
   components: {

@@ -5,6 +5,7 @@
 
 * vue.js (2.0)
 * vue-router
+* vue-resource
 * webpack
 * eslint
 * es6

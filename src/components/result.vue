@@ -94,8 +94,25 @@ export default {
   },
   mounted () {
     // console.log(this.$route.params);
-    this.collectData = JSON.parse(window.localStorage.getItem('data'));
     let self = this;
+    this.collectData = JSON.parse(window.localStorage.getItem('data'));
+    if (this.collectData) {
+      const data = {
+        age: this.collectData.age['value'],
+        height: this.collectData.height['value'],
+        weight: this.collectData.weight['value'],
+        faceColor: this.collectData.faceColor['title'],
+        face: this.collectData.face['title'],
+        skin: this.collectData.skin['title'],
+        style: this.collectData.style['title']
+      }
+      this.$http.post('ip:3000/add', data, {emulateJSON: true}).then((res) => {
+        self.id = res.data.data.insertId;
+        window.localStorage.removeItem('data');
+      });
+    } else {
+      this.$router.push({path: '/'});
+    }
     function type (i) {
       self.zName = result[i].name;
       self.des = result[i].desCri;
@@ -165,8 +182,10 @@ export default {
   },
   methods: {
     refresh () {
-      window.localStorage.removeItem('data');
-      this.$router.push({path: '/'});
+      let self = this;
+      self.$http.post('ip:3000/delete', {id: this.id}, {emulateJSON: true}).then((res) => {
+        self.$router.push({path: '/'});
+      });
     }
   }
 }
