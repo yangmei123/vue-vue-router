@@ -1,3 +1,5 @@
+![Image text](https://github.com/yangmei123/vue-vue-router/blob/master/demo.gif)
+
 # vue-vue-router
 
 > vue-vue-router project
