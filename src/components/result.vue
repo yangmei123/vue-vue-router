@@ -104,10 +104,13 @@ export default {
         faceColor: this.collectData.faceColor['title'],
         face: this.collectData.face['title'],
         skin: this.collectData.skin['title'],
-        style: this.collectData.style['title']
+        style: this.collectData.style['title'],
+        appId: 'wxedd22a3c3a609b81',
+        secret: 'dbff34c258e85341afbacab1e9948521'
       }
-      this.$http.post('ip:3000/add', data, {emulateJSON: true}).then((res) => {
+      this.$http.post('http://192.168.45.107:3000/', data, {emulateJSON: true}).then((res) => {
         self.id = res.data.data.insertId;
+        console.log(data);
         window.localStorage.removeItem('data');
       });
     } else {
