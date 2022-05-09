@@ -6,7 +6,7 @@
       <div class='selectBox clearFix'>
           <swiper :options="swiperOption" ref="mySwiper">
             <!-- slides -->
-            <swiper-slide class='swiper-slide' v-for="item in age"> {{item}} </swiper-slide>
+            <swiper-slide class='swiper-slide' v-for="item in age" :key="item.id"> {{item}} </swiper-slide>
             <!-- Optional controls -->
             <div class="swiper-button-prev swiper-age-prev" slot="button-prev"></div>
             <div class="swiper-button-next swiper-age-next" slot="button-next"></div>
@@ -16,7 +16,7 @@
       <div class='selectBox clearFix'>
           <swiper :options="heightOption" ref="heightSwiper">
             <!-- slides -->
-            <swiper-slide class='swiper-slide' v-for="item in height"> {{item}} </swiper-slide>
+            <swiper-slide class='swiper-slide' v-for="item in height" :key="item.id"> {{item}} </swiper-slide>
             <!-- Optional controls -->
             <div class="swiper-button-prev swiper-height-prev" slot="button-prev"></div>
             <div class="swiper-button-next swiper-height-next" slot="button-next"></div>
@@ -26,7 +26,7 @@
       <div class='selectBox clearFix'>
           <swiper :options="weightOption" ref="weightSwiper">
             <!-- slides -->
-            <swiper-slide class='swiper-slide' v-for="item in weight"> {{item}} </swiper-slide>
+            <swiper-slide class='swiper-slide' v-for="item in weight" :key="item.id"> {{item}} </swiper-slide>
             <!-- Optional controls -->
             <div class="swiper-button-prev swiper-weight-prev" slot="button-prev"></div>
             <div class="swiper-button-next swiper-weight-next" slot="button-next"></div>
@@ -35,7 +35,7 @@
       <div class='btnArea'>
       <router-link to="/" class="personPre">&nbsp;上一步</router-link>
       <router-link to="/beauty/face" class="btn next">下一步</router-link>
-      </div>   
+      </div>
     </div>
   </div>
 </template>
@@ -43,6 +43,7 @@
 <script>
 import { swiper, swiperSlide } from 'vue-awesome-swiper'
 import 'swiper/dist/css/swiper.min.css';
+// import Cookies from 'js-cookie';
 
 const style = {
   option (prevClass, nextClass, index, that) {
@@ -98,6 +99,10 @@ export default {
     swiperSlide
   },
   created () {
+    // alert(Cookies.get('a'));
+    this.show = false;
+    // Cookies.set('a', 'a缓存');
+    // alert('created');
     // 设置基本信息的数值
     this.age = style.num(16, 50);
     this.height = style.num(100, 200);

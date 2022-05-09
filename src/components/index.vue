@@ -13,32 +13,29 @@
                  </div>
              </div>
         </div>
-        <div class="btnArea"> 
+        <div class="btnArea">
          <router-link to="beauty" class="btn nowBtn" v-on:click="start">开始测试</router-link>
         </div>
     </div>
-    <load :show="show"></load>  
+    <load :show="show"></load>
   </div>
 </template>
 
 <script>
 import loading from './loading.vue';
 import music from './music.vue';
+
 export default {
   name: 'index',
   data () {
     return {
-      show: true,
+      show: false,
       musicShow: true,
       contentShow: false
     }
   },
-  created () {
-    this.show = false;
-  },
   mounted () {
     this.$refs.index.style.height = window.innerHeight + 'px';
-    // this.$refs.index.style.width = window.innerWidth + 'px';
   },
   components: {
     'load': loading,

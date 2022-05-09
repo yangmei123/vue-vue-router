@@ -1,5 +1,5 @@
 <template>
-  <div id='result' ref="result" class='selectWrap result'> 
+  <div id='result' ref="result" class='selectWrap result'>
     <div class='bgWrap'>
          <div class='boxWrap'>
              <div class='boxBody'>
@@ -106,7 +106,7 @@ export default {
         skin: this.collectData.skin['title'],
         style: this.collectData.style['title']
       }
-      this.$http.post('http://192.168/add', data, {emulateJSON: true}).then((res) => {
+      this.$http.post('http://localhost:3000/add', data, {emulateJSON: true}).then((res) => {
         self.id = res.data.data.insertId;
         console.log(data);
         window.localStorage.removeItem('data');
@@ -184,7 +184,7 @@ export default {
   methods: {
     refresh () {
       let self = this;
-      self.$http.post('ip:3000/delete', {id: this.id}, {emulateJSON: true}).then((res) => {
+      self.$http.post('http://localhost:3000/delete', {id: this.id}, {emulateJSON: true}).then((res) => {
         self.$router.push({path: '/'});
       });
     }

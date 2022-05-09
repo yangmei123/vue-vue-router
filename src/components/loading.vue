@@ -16,12 +16,12 @@ export default {
     return {
       loadShow: this.show
     }
-  }// ,
-  // created () {
-  //   setTimeout(() => {
-  //     this.loadShow = false;
-  //   }, 2000);
-  // }
+  },
+  created () {
+    setTimeout(() => {
+      this.loadShow = false;
+    }, 2000);
+  }
 }
 </script>
 
@@ -47,30 +47,30 @@ export default {
 }
 
 i:nth-child(1) {
-    -webkit-animation: bump01 2s ease-out infinite;
+    animation: bump01 2s ease-out infinite;
 }
 
 i:nth-child(2) {
     left: 14px;
-    -webkit-animation: bump02 2s ease-out infinite;
+    animation: bump02 2s ease-out infinite;
 }
 
 i:nth-child(3) {
     left: 28px;
-    -webkit-animation: bump03 2s ease-out infinite;
+    animation: bump03 2s ease-out infinite;
 }
 
 i:nth-child(4) {
     left: 42px;
-    -webkit-animation: bump04 2s ease-out infinite;
+    animation: bump04 2s ease-out infinite;
 }
 
 i:nth-child(5) {
     left: 56px;
-    -webkit-animation: bump05 2s ease-out infinite;
+    animation: bump05 2s ease-out infinite;
 }
 
-@-webkit-keyframes bump01 {
+@keyframes bump01 {
     0% {
         top: 0;
     }
@@ -85,7 +85,7 @@ i:nth-child(5) {
     }
 }
 
-@-webkit-keyframes bump02 {
+@keyframes bump02 {
     0% {
         top: 0;
     }
@@ -103,7 +103,7 @@ i:nth-child(5) {
     }
 }
 
-@-webkit-keyframes bump03 {
+@keyframes bump03 {
     0% {
         top: 0;
     }
@@ -121,7 +121,7 @@ i:nth-child(5) {
     }
 }
 
-@-webkit-keyframes bump04 {
+@keyframes bump04 {
     0% {
         top: 0;
     }
@@ -139,7 +139,7 @@ i:nth-child(5) {
     }
 }
 
-@-webkit-keyframes bump05 {
+@keyframes bump05 {
     0% {
         top: 0;
     }

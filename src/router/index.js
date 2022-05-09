@@ -33,6 +33,7 @@ export default new Router({
     },
     children: [{
       path: '/',
+      name: 'beauty',
       component: style,
       meta: {
         title: '默认年龄身高体重'
