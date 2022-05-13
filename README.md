@@ -35,4 +35,11 @@ npm run build
 npm run build --report
 ```
 
+* 请求接口的对应地址和端口配置
+
+```
+this.$http.post('http://localhost:8000/add', data, {emulateJSON: true})
+
+```
+
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
